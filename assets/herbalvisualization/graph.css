@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    font-family: 'PT Sans', cursive;
+}
+
+svg.graph-container {
+    display: block;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+text {
+    pointer-events: none;
+}
+
+.inner_node rect {
+    pointer-events: all;
+    fill: white;
+    stroke: #343434;
+    stroke-width: 0.5px;
+}
+
+.inner_node rect.highlight {
+    stroke: #000000;
+    stroke-width: 4px;
+}
+
+.outer_node circle {
+    fill: #fff;
+    stroke-width: 1.5px;
+    pointer-events: all;
+}
+
+.outer_node circle.highlight
+{
+    stroke-width: 2.5px;
+}
+
+.outer_node.cure circle {
+    stroke: #8647AC;
+}
+
+.outer_node.cure circle.highlight
+{
+    stroke: #FF1B48;
+}
+
+.outer_node.ingredient circle {
+    stroke: #8647AC;
+}
+
+.outer_node.ingredient circle.highlight {
+    stroke: #1021FF;
+}
+
+.link {
+    fill: none;
+}
+
+.link.cure{
+    stroke: #F1E2FA; 
+}
+
+.link.ingredient{
+    stroke: #F1E2FA;
+}
+
+.link.cure.highlight2{
+    stroke: #FF1B48; 
+    stroke-width: 4.5px;
+}
+
+.link.ingredient.highlight2{
+    stroke: #1021FF;
+    stroke-width: 4.5px;
+}
